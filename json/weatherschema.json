@@ -1,0 +1,61 @@
+{
+"$schema": "http://json-schema.org/draft-04/schema#",
+"title": "Weather Report",
+"description": "Weather information from UK cities",
+	"type" : "object",
+	"properties" : {
+		"weatherStatus" : {
+			"type" : "array",
+			"items" : {
+				"type" : "object",
+				"properties" : {
+					"city" : {
+						"type": "object",
+						"properties" : {
+							"id" : {
+								"type": "number",
+								"minimum": 0
+							},
+							"name" : {"type" : "string"}
+						},
+						"required":["id","name"]
+					},
+					"weather" : {
+						"type" : "object",
+						"properties" : {
+							"conditions" : {
+								"type" : "string",
+								"enum" : ["Sun", "Rain", "Light Rain",
+									"Snow", "Hail", "Clouds", "Light Clouds",
+									"Thunderstorm"]
+							},
+							"icon" : {"type" : "string"},
+							"temperature" : {"type" : "number"},
+							"wind": {
+								"type": "object",
+								"properties" : {
+									"speed": {
+										"type": "number",
+										"minimum": 0
+									},
+									"direction": {
+										"type": "string",
+										"enum" : ["Northerly", "North easterly", "Easterly",
+											"South easterly", "Southerly", "South westerly", 
+											"Westerly", "North westerly"]
+									},
+									"chillFactor": {"type": "number"}
+								},
+								"required": ["speed", "direction", "chillFactor"]
+							}
+						},
+						"required": ["conditions", "temperature", "wind"]
+					}
+				},
+				"required":["city", "weather"]
+			},
+			"minItems": 1
+		}
+	},
+	"required": ["weatherStatus"]
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fma api</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!--script src="js/jquery.min.js"></script-->
+	<!--script src="js/live.js"></script><!--this is only for autoreload in browser-->
+	<script src="apiweather.js"></script>
+	<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header id="pageheader" role="banner">
+	</header>
+	<section>
+		<select id="countries">
+			<option selected>please select</option>
+			<option>England</option>
+			<option>N. Ireland</option>
+			<option>Scotland</option>
+			<option>Wales</option>
+		</select>
+		<select id="cities">
+			<option>select country</option>
+		</select>
+		<table id="weather" hidden>
+			<caption>weather conditions in various cities</caption>
+			<tbody>
+				<tr>
+					<th scope="col">City:</th>
+					<th scope="col">Date:</th>
+					<th scope="col">Conditions:</th>
+					<th scope="col">Temperature:</th>
+					<th scope="col">Wind Speed:</th>
+					<th scope="col">Direction:</th>
+					<th scope="col">Icon:</th>
+				</tr>
+				<tr>
+					<td id="city"></td>
+					<td id="date"></td>
+					<td id="cond"></td>
+					<td id="temp"></td>
+					<td id="sped"></td>
+					<td id="dire"></td>
+					<td id="icon"></td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="error" hidden></div>
+	</section>
+</body>
+</html>

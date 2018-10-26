@@ -1,0 +1,56 @@
+{
+	"weatherStatus":[
+		{
+			"city": {"id": 1, "name": "Warszawa" },
+			"weather": {
+				"conditions": "Clouds",
+				"icon": "icons/cloud.png",
+				"temperature": 20,
+				"wind": {
+					"speed": 6,
+					"direction": "Northerly",
+					"chillFactor": 4
+				}
+			}
+		},
+		{
+			"city": {"id": 2, "name": "Wroclaw" },
+			"weather": {
+				"conditions": "Sun",
+				"icon": "icons/sun and cloud.png",
+				"temperature": 30,
+				"wind": {
+					"speed": 2,
+					"direction": "Southerly",
+					"chillFactor": 10
+				}
+			}
+		},
+		{
+			"city": {"id": 1, "name": "Poznan" },
+			"weather": {
+				"conditions": "Thunderstorm",
+				"icon": "icons/thunderstorm.png",
+				"temperature": 15,
+				"wind": {
+					"speed": 12,
+					"direction": "Westerly",
+					"chillFactor": 3
+				}
+			}
+		},
+		{
+			"city": {"id": 1, "name": "Katowce" },
+			"weather": {
+				"conditions": "Sun",
+				"icon": "icons/sun.png",
+				"temperature": 35,
+				"wind": {
+					"speed": 5,
+					"direction": "North westerly",
+					"chillFactor": 25
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,96 @@
+/* CSS Reset */
+
+section, article, header, footer, nav, aside, main {
+	display: block;
+}
+html, body, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, 
+form, fieldset, label, legend, dl, dt, dd, table, td, th, caption{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+	margin: 0;
+	margin-bottom: -5px;
+	padding: 0;
+	border:none;
+}
+figure, figcaption{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+/* my */
+
+body {
+	font-family: Arial, Verdana, Geneva, sans-serif;
+	color: #04080b; 
+    background-color: #ffffff;
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'parisian', Georgia, serif;
+    font-weight: normal;
+	color: #5c2368;
+}
+h2 {
+	font-size: 2em;
+	margin-bottom: 0.25em;
+}
+h3 {
+	font-size: 1.5em;
+}
+
+a:link, a:visited {
+    color: #576823;
+}
+a:hover, a:focus {
+	color: #E3F020;
+}
+
+/* css */
+body {
+	background-color: #daddaf;
+}
+
+table, td, th, caption {
+	border: 1px solid #5a5a86;
+}
+td, th, caption {
+	text-align: center;
+	padding: 0.25em 0.5em;
+}
+table {
+	border-collapse: collapse;
+	margin: 1em 0em;
+}
+th {
+	background-color: #94c3ea;
+	color: #f6f7f8;
+	text-shadow: 0px 0px 2px black;
+}
+td, caption {
+	background-color: #f6f7f8;
+	color: #0f0f38;
+}
+caption {
+	color: #78304c;
+	font-size: 1.25em;
+}
+#countries, #cities{
+	padding: 0.5em;
+	margin-top: 1em;
+}
+#error{
+	border: 1px solid #e8a961;
+	padding: 0.5em;
+	background-color:#92b5d2;
+	color: #e3fc1c;
+}
